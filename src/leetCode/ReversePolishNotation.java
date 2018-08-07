@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Stack;
 
+
+// 참고 https://en.wikipedia.org/wiki/Reverse_Polish_notation
 public class ReversePolishNotation {
 
     public int calc(int a, int b, String op) {
@@ -54,6 +56,6 @@ public class ReversePolishNotation {
         String[] tokens = {"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"};
         ReversePolishNotation reversePolishNotation = new ReversePolishNotation();
         int answer = reversePolishNotation.evalRPN(tokens);
-        System.out.println("answer : " + answer);
+        System.out.println("answer : " + answer); // 22
     }
 }
